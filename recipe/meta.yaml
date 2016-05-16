@@ -15,7 +15,6 @@ build:
   - bob_dependecy_graph.py = bob.extension.scripts:dependency_graph
   number: 5
   skip: true  # [win]
-  script: python -B setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
