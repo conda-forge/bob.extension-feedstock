@@ -27,7 +27,7 @@ requirements:
 test:
   requires:
   - nose
-  - boost
+  - boost 1.60*
   - cmake
   - pkg-config
   - libblitz
