@@ -48,7 +48,7 @@ test:
     - bob_new_version.py --help
     - bob_dependecy_graph.py --help
     - cmake
-    - LD_LIBRARY_PATH=$PREFIX/lib nosetests -sv bob.extension  # [linux]
+    - nosetests -sv bob.extension  # [linux]
     - CFLAGS="${CFLAGS} -pthread" LDFLAGS="${LDFLAGS} -lpthread" DYLD_FALLBACK_LIBRARY_PATH=$PREFIX/lib nosetests -sv bob.extension  # [osx]
 
 about:
