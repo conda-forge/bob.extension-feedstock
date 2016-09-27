@@ -29,27 +29,11 @@ requirements:
 
 test:
   requires:
-    - nose
-    - boost
     - cmake
-    - pkg-config
-    - freetype
-    - libblitz
-    - numpy
-    - sphinx
-    - coverage
-
-  imports:
-    - bob
-    - bob.extension
-    - bob.extension.scripts
 
   commands:
-    - bob_new_version.py --help
-    - bob_dependecy_graph.py --help
+    - cmake --version
     - cmake
-    - nosetests -sv bob.extension  # [linux]
-    - CFLAGS="${CFLAGS} -pthread" LDFLAGS="${LDFLAGS} -lpthread" DYLD_FALLBACK_LIBRARY_PATH=$PREFIX/lib nosetests -sv bob.extension  # [osx]
 
 about:
   home: https://www.idiap.ch/software/bob/
